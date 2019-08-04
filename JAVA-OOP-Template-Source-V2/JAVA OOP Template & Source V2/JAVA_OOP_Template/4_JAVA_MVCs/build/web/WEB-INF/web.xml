@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ShowBooksController</servlet-name>
+        <servlet-class>com.thjava.web.c.ShowBooksController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddBookController</servlet-name>
+        <servlet-class>com.thjava.web.c.AddBookController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormBookController</servlet-name>
+        <servlet-class>com.thjava.web.c.FormBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowBooksController</servlet-name>
+        <url-pattern>/ShowBooksController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddBookController</servlet-name>
+        <url-pattern>/AddBookController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormBookController</servlet-name>
+        <url-pattern>/FormBookController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
